@@ -22,3 +22,8 @@
     justify-content: center;
     margin-top: 60px;
 }
+@media screen and (max-width: 508px){
+    .products {
+        column-gap: 0;
+    }
+}
