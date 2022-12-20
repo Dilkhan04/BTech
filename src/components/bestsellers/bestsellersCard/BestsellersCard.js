@@ -12,6 +12,7 @@ const BestsellersCard = ({item}) => {
 
   return (
     <div className={style.box}>
+
       <NavLink to={`/${item.name}`}><img src={item.image} alt="img-pokemon"/></NavLink>
       <NavLink to={`/${item.name}`}><p>{item.name}</p></NavLink>
         <div className={style.price}>
