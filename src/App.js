@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";   
 import RegisterComponent from "./pages/loginAndRegistrationPage/LoginAndRegistration";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";

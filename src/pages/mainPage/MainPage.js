@@ -4,13 +4,11 @@ import Slider from "../../components/mainPage/slider/Slider";
 import MiniSliderMainPage from "../../components/miniSliderMainPage/miniSliderMainPage.js";
 import style from "../bestsellersPage/css/bestsellerspage.module.css";
 import { useSelector } from "react-redux";
-import {
-    ProductsSelect,
-} from "../../redux/slice/productsSlice";
+import { ProductsSelect } from "../../redux/slice/productsSlice";
 import { useState } from "react";
 import BestsellersCard from "../../components/bestsellers/bestsellersCard/BestsellersCard";
 import { NavLink } from "react-router-dom";
-import arrow from '../../media/mainPage/Arrow right.svg'
+import arrow from "../../media/mainPage/Arrow right.svg";
 const MainPage = () => {
     const products = useSelector(ProductsSelect);
     const [page, setPage] = useState(1);
@@ -45,10 +43,22 @@ const MainPage = () => {
                             ))}
                     </ul>
                     <NavLink
-                        style={{ textDecoration: "none", color: "#0B1124", display: "flex", alignItems: "center", justifyContent: "right", marginTop: "25px", fontSize: "18px", fontWeight: "600" }}
+                        style={{
+                            textDecoration: "none",
+                            color: "#0B1124",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "right",
+                            marginTop: "25px",
+                            fontSize: "18px",
+                            fontWeight: "600",
+                        }}
                         to={"/bestsellers"}
                     >
-                        Показать все <span><img src={arrow} alt="" /></span>
+                        Показать все{" "}
+                        <span>
+                            <img src={arrow} alt='' />
+                        </span>
                     </NavLink>
                 </div>
             </div>

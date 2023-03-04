@@ -4,9 +4,11 @@
     font: 16px 'Rubik', sans-serif;
     box-sizing: border-box;
 }
+
 body {
     width: 100%;
 }
+
 .btn {
     width: max-content;
     height: 48px;
@@ -22,20 +24,25 @@ body {
     border-radius: 12px;
     outline: none;
 }
+
 .btn:hover {
     background: #F8F041;
 }
-.container{
+
+.container {
     width: 100%;
     padding: 0 112px;
 }
+
 li {
     list-style-type: none;
 }
+
 form {
     user-select: none;
 }
-@media screen and (max-width: 1130px){
+
+@media screen and (max-width: 1130px) {
     .container {
         padding: 0 12px;
     }
